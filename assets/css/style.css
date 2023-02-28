@@ -66,8 +66,13 @@ article section{
 }
 
 .my-work section{
-    display: inline-block;
+    display: block;
     background-color: beige;
     padding:25px;
     margin: 30px;
+}
+
+.my-work img{
+    max-width: 400px;
+    max-height: 250px;
 }
