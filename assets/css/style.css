@@ -1,0 +1,33 @@
+header{
+    width: 100%;
+    background-color: cornflowerblue;
+    display: inline-flex;
+    
+}
+
+header h1{
+    font-size: 250%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color:white;
+    width: fit-content;
+    padding: 10px 50px 10px 25px ;
+    margin:25px;
+}
+/* get hieght to fit parent */
+header section{
+    position: absolute;
+    right:0%;
+    display: flex;
+    background-color: black;
+    color:white;
+    flex-wrap: wrap;
+
+}
+
+header a{
+    width:50%;
+    border: white solid 1px;
+    padding: 5px;
+
+}
