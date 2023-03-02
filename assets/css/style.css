@@ -72,10 +72,33 @@ article section{
 }
 .my-work{
     margin-top: 250px;
+    background-color: blueviolet;
 }
-.my-work div{
-    margin: 25px;
+
+.portfolio{
+    display: inline-block;
+    background-color: brown;
+    width: 100%;
 }
+
+.large-work{
+    width: 100%;
+    background-color: blue;
+}
+
+.small-works{
+    background-color: aquamarine;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+.small-works section{
+    float: left;
+    width:45%
+}
+
 
 .my-work section{
     display: block;
@@ -86,6 +109,7 @@ article section{
     background-color: cornflowerblue;
 
 }
+
 /* Get the images to align to the center */
 .my-work img{
     max-width: 400px;
