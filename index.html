@@ -11,35 +11,38 @@
 </head>
 
 <body>
-    <header>
+    <header id="scroll-back-to-top">
         <div>
             <h1>Jonny Olsen</h1>
         </div>
         <section>
-            <a>About me</a>
-            <a>My work</a>
-            <a>Socials</a>
+            <a href="#scroll-about-me">About me</a>
+            <a href="#scroll-my-work">My work</a>
+            <a href="#scroll-socials">Socials</a>
             <a>Resume</a>
         </section>
     </header>
     <article>
-        <section>
-            <div class="about-me">
+        <section class="top-article">
+            <div class="about-me" id="scroll-about-me">
                 <h1>About Me</h1>
-                <p>This will be the about me paragraph</p>
+                <p>Hi there, my name is Jonny Olsen and I am a fullstack web developer, I graduated from Salt Lake Community College with my associates degree in Advanced Manufacturing.
+                    I got this degree while completing an apprenticeship program offered by stadler rail, a company who manufactures commuter trains, it was the first apprenticeship program offered in the state of utah.
+                    When I am not in class or working you I am usually playing poker with friends or trying out a new recipe in the kitchen.
+                </p>
             </div>
-            <div class="socials">
+            <div class="socials" id="scroll-socials">
                 <img src="assets/images/PFP.PNG" alt="My profile picture">
                 <h3>Hover to view</h3>
                 <ul>
-                    <li><h4>Git hub:</h4></li>
-                    <li><h4>Email:</h4></li>
-                    <li><h4>Phone number:</h4></li>
-                    <li><h4>Spotify:</h4></li>
+                    <li><h4>Git hub:</h4><p>jonny258</p></li>
+                    <li><h4>Email:</h4><p>joncolsen3@gmail.com</p></li>
+                    <li><h4>Phone number:</h4><p>801-205-8468</p></li>
+                    <li><h4>Spotify:</h4><p>jon-445</p></li>
                 </ul>
             </div>
         </section>
-        <section class="my-work">
+        <section class="my-work" id="scroll-my-work">
             <h1>My Work</h1>
             <div class="portfolio">
             <div class="large-work">
@@ -47,7 +50,10 @@
                 <a href="https://jonny258.github.io/02-Challenge/">
                     <section>
                             <h3>02-Challenge</h3>
-                            <img src="assets/images/Horiseon-challenge.jpg" alt="SEO management site">
+                            <div>
+                                <img src="assets/images/Horiseon-challenge.jpg" alt="SEO management site">
+                                <img id="challenge-repo" src="assets/images/02-Challenge repo.jpg" >
+                            </div>
                             <p>Learned best practices for using HTML and CSS</p>
                             <a href="https://github.com/jonny258/02-Challenge">Repository</a>
                     </section>
@@ -86,10 +92,10 @@
                         <a href="https://familyguy.fandom.com/wiki/Peter_Griffin">Repository</a>
                     </a>
                 </section>
+                <a href="#scroll-back-to-top">Click to go back to the top</a>
             </div>
         </div>
         </section>
     </article>
 </body>
-
 </html>
