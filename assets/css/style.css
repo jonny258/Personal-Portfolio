@@ -1,9 +1,15 @@
+:root{
+    --main-color: cornflowerblue; 
+    --secondary-color: black;
+    --alt-text-color: white;
+}
+
 html{
     scroll-behavior: smooth;
 }
 header{
     width: 100%;
-    background-color: cornflowerblue;
+    background: linear-gradient(var(--main-color),var(--secondary-color));
     display: inline-flex;
     height: 120px;
     
@@ -12,8 +18,8 @@ header{
 header h1{
     font-size: 250%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color:white;
+    background-color: var(--secondary-color);
+    color: var(--alt-text-color);
     width: fit-content;
     padding: 10px 50px 10px 25px ;
     margin:25px;
@@ -23,8 +29,8 @@ header section{
     position: absolute;
     right:0%;
     display: flex;
-    background-color: black;
-    color:white;
+    background-color: var(--secondary-color);
+    color:var(--alt-text-color);
     flex-wrap: wrap;
     height:120px;
 }
@@ -35,7 +41,9 @@ header a{
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: var(--alt-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 
 }
 
@@ -65,15 +73,16 @@ article section{
 .about-me h1, .my-work h1{
     font-size: 200%;
     font-family: Arial, Helvetica, sans-serif;
-    border-right: black solid 5px;
+    border-right: var(--secondary-color) solid 5px;
     padding:20px;
 }
 
 
 .socials{
     padding:20px;
-    border: black solid 5px;
-    text-align: center;    
+    border: var(--secondary-color) solid 5px;
+    text-align: center;   
+    border-radius: 5px; 
 }
 
 .socials li{
@@ -92,7 +101,7 @@ article section{
 
 .socials img{
     width: 100px;
-    border: black solid 2px;
+    border: var(--secondary-color) solid 2px;
     border-radius: 30px;
 }
 .my-work{
@@ -127,9 +136,9 @@ article section{
     display: block;
     padding:25px;
     margin: 30px;
-    border: black solid 5px;
+    border: var(--secondary-color) solid 5px;
     border-radius: 15px;
-    background-color: cornflowerblue;
+    background-color: var(--main-color);
     text-align: center;
 }
 
@@ -138,11 +147,11 @@ article section{
 .my-work img{
     width: 400px;
     margin: 25px;
-    border: black solid 5px;
+    border: var(--secondary-color) solid 5px;
 }
 
 .my-work h3{
-    font-size: 150%;
+    font-size: 200%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
@@ -151,16 +160,15 @@ article section{
     font-weight: 500;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:5px;
-    color:black;
+    color:var(--secondary-color);
     text-decoration: none;
-    align-content: center;
 }
 
 .my-work p{
     font-weight: 500;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:5px;
-    color:black;
+    color:var(--secondary-color);
     text-decoration: none;
     text-align: center;
 }
@@ -173,10 +181,16 @@ article section{
     #challenge-repo{
         display: none;
     }
+    .socials{
+        margin-left: 185px;
+    }
 }
 
 @media screen and (max-width: 770px){
     .my-work img{
         max-width: 200px;
+    }
+    header{
+        display: block;
     }
 }
